@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+
+
+ .box:nth-child(1){
+    width: 100px;
+    height: 100px;
+    animation-name: box1;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    background: blue ;
+}
+
+
+
+
+ @keyframes box1 {
+    from{
+        transform: translateX(0px) rotate(0deg);
+    }
+
+    to{
+        transform: translateX(500px) rotate(360deg);
+    }
+}
+
+@keyframes box2 {
+    from{
+        transform: translateX(100px) rotate(0deg);
+    }
+
+    to{
+        transform: translateX(600px) rotate(360deg);
+    }
+}  
